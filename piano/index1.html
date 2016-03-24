@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        *{margin:0;padding:0;}
+        ul{list-style:none;}
+        div#comment{
+                  font-size:12px;
+                  line-height:18px;
+                  padding-left:20px;
+                  margin-left: 800px;
+                  margin-top: 300px;
+                  color: #f40;
+        }
+        nav{
+            width: 800px;
+            height:35px;
+            border:1px solid #ccc;
+            margin: 100px auto;
+        }
+        nav li{
+            width: 99px;
+            height:35px;
+            border-right:1px dashed #ccc;
+            float:left;
+            text-align: center;
+            line-height: 35px;
+            position: relative;
+        }
+        nav li ins{
+            position: absolute;
+            top:35px;
+            left:0;
+            width:100%;
+            height:100%;
+            background-color: pink;
+            z-index: -1;
+        }
+    </style>
+    <script src="jquery-1.11.1.min.js"></script>
+    <script type="text/javascript">
+       $(function() {
+            $("nav li:last").css("border",0);
+           //  a.append(b);   把 b 放到 a 里面的最后面  a 是父亲
+           $("nav li").append("<ins></ins>");     //  生成ins 并且插入
+           var arrColor = ["red","green","blue","pink","purple","yellow","orange","gray"];
+           // 要开始遍历    隐式迭代   遍历  循环  each
+           //   $("li").css("color","red")   // 10   li  都是红色
+             //  $("li").each()  for
+           // $("li").mouseenter(function(){  $(this).index()  // 亲兄弟 })
+            $("nav li ins").each(function(index,ele) {  // index 索引号   ele  当前元素
+                  // alert(index);
+                 $(ele).css("backgroundColor",arrColor[index]);
+            })
+         /*  $("nav li ins").mouseenter(function() {
+               alert($(this).index());
+
+           })*/
+
+           $("nav li").mouseenter(function() {
+               $(this).children("ins").stop().animate({top:0},200);
+               // 他的儿子上去
+               $("audio").get($(this).index()).load();  // 加载当前音乐
+               $("audio").get($(this).index()).play();  // 加载当前音乐
+
+           });
+           $("nav li").mouseleave(function() {
+               $(this).children("ins").stop().animate({top:35},200);
+           })
+
+           // 检测键盘
+           $(window).keydown(function(event) {  // 按下键盘
+                 //  alert(event.keyCode);  // 返回当前按键 的unicode编码
+               var num = 0;
+               if(event.keyCode>=49 && event.keyCode<=56) {
+                   // 说明我们按在 1~8 之间  限定的意思
+                   //  alert(1);
+                   // 按下1  就去 第一个li
+                  /* 1    49      0
+                   2    50      1
+                   3    51      2*/
+                   num = event.keyCode - 49;
+                   $("nav li").eq(num).trigger("mouseenter");
+                   setTimeout(function() {
+                       $("nav li").eq(num).trigger("mouseleave");
+                   },300)
+
+               }
+           })
+       })
+    </script>
+</head>
+<body>
+<nav>
+    <ul>
+        <li>
+            哈
+        </li>
+        <li>哈
+        </li>
+        <li>今</li>
+        <li>天</li>
+        <li>好</li>
+        <li>开</li>
+        <li>心</li>
+        <li>啊</li>
+    </ul>
+</nav>
+<audio src="music/1.ogg"></audio>
+<audio src="music/2.ogg"></audio>
+<audio src="music/3.ogg"></audio>
+<audio src="music/4.ogg"></audio>
+<audio src="music/5.ogg"></audio>
+<audio src="music/6.ogg"></audio>
+<audio src="music/7.ogg"></audio>
+<audio src="music/8.ogg"></audio>
+<div id="comment">
+        <h3>弹奏方法</h3>
+        <p>使用鼠标左键点击钢琴键，或者按键盘上的12345678。<br>支持浏览器：IE 9以上、Firefox 10以上、Chrome 17以上</p>
+　　</div>
+</body>
+</html>
