@@ -1,0 +1,130 @@
+/*精品抢购区--s*/
+.bg-jinpin {
+    background: #8A3053;
+    padding: 50px 0;
+}
+.jinpin-con-title {
+    height: 100px;
+    width: 520px;
+    margin: 0 auto;
+    background: url(../images/jinpin/title.png) no-repeat 0 -360px ;
+    text-align: center;
+    line-height: 100px;
+}
+.product-con li {
+    width: 240px;
+    height: 305px;
+    float: left;
+    margin: 0 10px 10px 0;
+}
+.product-con-pic {
+    height: 220px;
+    padding-top: 20px;
+    background-color: #fff;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.product-con-pic .hd {
+    background-image: -webkit-linear-gradient(0deg, rgba(255,255,255,0), rgba(255,255,255,0.7), rgba(255,255,255,0));
+    position: absolute;
+    z-index: 5;
+    width: 100%;
+    height: 100%;
+    left: -100%;
+    -webkit-transform: skewx(-25deg);
+}
+.product-con-pic:hover .hd{
+    left:100%;
+    -webkit-transition:0.5s;
+}
+.product-con-txt {
+    height: 50px;
+    background: #CFA972;
+    padding-top: 15px;
+    text-align: center;
+}
+.product-con-txt .txt-top {
+    font-size: 12px;
+    font-family: "tahoma,arial,\5b8b\4f53,sans-serif";
+}
+.product-con-txt .txt-bot {
+    padding: 4px 40px;
+}
+.product-con-txt .txt-bot .price1{
+    color: #e60012;
+    font-size: 14px;
+    font-weight: bold;
+    float: left;
+}
+.product-con-txt .txt-bot .price2 {
+    text-decoration: line-through;
+    color: #fff;
+    font-size: 12px;
+    float: right;
+}
+/*精品抢购区--e*/
+/*leftbanner--S*/
+.left-ban {
+    position: fixed;
+    left: 0px;
+    bottom: 20px;
+}
+.left-ban .mmz{
+    float: left;
+    position: relative;
+}
+.left-ban .mmz ul {
+    display: none;
+    position: absolute;
+    top :-120px;
+    border: 1px solid #E8E8E8;
+}
+.left-ban .mmz ul li {
+    height: 40px;
+    width: 65px;
+    background-color: #fff;
+    padding-left: 20px;
+}
+.left-ban .mmz ul li a {
+    color:#2E74D3;
+    font: 14px/40px "Microsoft Yahei";
+}
+.left-ban .baokuan {
+    height: 64px;
+    text-align: center;
+    background: #fff;
+    float: left;
+}
+.left-ban .baokuan a{
+    display: block;
+    float: left;
+    width: 64px;
+    height: 64px;
+    color: #666;
+    font: 400 12px/64px "Microsoft Yahei";
+}
+.left-ban .pro-show {
+    background-color: #fff;
+    float: left;
+    display: none;
+}
+.left-ban .pro-show li {
+    float: left;
+    height: 64px;
+    margin-left: 5px;
+    position: relative;
+}
+.left-ban .pro-show li .price {
+    display: block;
+    width: 64px;
+    height: 15px;
+    background-color: #000;
+    font: 12px/15px "Microsoft Yahei";
+    text-align: center;
+    color: #fff;
+    opacity: .4;
+    position: absolute;
+    bottom: 0;
+}

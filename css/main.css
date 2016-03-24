@@ -1,0 +1,170 @@
+/*单品秒杀区*/
+.bgc_8A30 {
+    width: 100%;
+    height: 2240px;
+    background-color: #8a3053;
+}
+.bgc_6a1435 {
+    height: 3255px;
+    width: 100%;
+    background-color: #6a1435;
+}
+.title {
+    background: url(../images/title.png) no-repeat center 0;
+    height: 158px;
+}
+.title1 {
+    background-position: center -158px;
+}
+
+/*单品秒杀区css样式*/
+.product-list1 ul li{
+    background-color: #fff;
+    float: left;
+    width: 240px;
+    height: 330px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+.img-box {
+    width: 200px;
+    height: 200px;
+    padding: 20px;
+    position: relative;
+    overflow: hidden;
+}
+.img-box .hd {
+    cursor: pointer;
+    background-image: -webkit-linear-gradient(0deg, rgba(255,255,255,0), rgba(255,255,255,0.5), rgba(255,255,255,0));
+    position: absolute;
+    z-index: 5;
+    width: 100%;
+    height: 100%;
+    left: -100%;
+    top: 0;
+    -webkit-transform: skewx(-25deg);
+}
+.img-box:hover .hd{
+    left:100%;
+    -webkit-transition: 1s;
+}
+
+.ms_box {
+    height: 40px;
+    background-color: #EC6300;
+    color: #fff799;
+    font: 20px/40px "microsoft yahei";
+}
+.name-box , .box-price{
+    line-height: 20px;
+    padding-top: 5px;
+}
+.box-price {
+    text-decoration: line-through;
+}
+.backzhc {
+    position: fixed;
+    left: 100px;
+    bottom: 10px;
+}
+
+
+
+/*品牌专区的css样式*/
+.product-list2 dl {
+    width: 491px;
+    height: 260px;
+    margin: 0 9px 9px 0;
+    float: left;
+    position: relative;
+    overflow: hidden;
+}
+/*.product-list2 dl dt img:hover {
+    width: 495px;
+    height: 265px;
+}*/
+.product-list2 dl dd {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+}
+.bg-pinPai{
+    background: #6A1435;
+    padding: 50px 0;
+}
+.pinPaiCon {
+    margin: 0 auto;
+    width: 1000px;
+}
+.pinPaiCon-ban li {
+    width: 240px;
+    height: 320px;
+    margin: 0 10px 10px 0;
+    vertical-align: top;
+    float: left;
+}
+.pinPaiCon-ban-pic {
+    width: 240px;
+    height: 245px;
+    overflow: hidden;
+}
+
+
+/*.pinPaiCon-ban-img:hover {
+    width: 245px;
+    height: 250px;
+}*/
+.pinPaiCon-ban-pic img {
+    vertical-align: top;
+}
+.pinPaiCon-ban-logo img {
+    vertical-align: top;
+}
+.pinPaiCon-ban-txt {
+    display: inline-block;
+    width: 240px;
+    height: 30px;
+    background: #EB6100;
+    text-decoration: none;
+    text-align: center;
+    color: #fff799;
+    font: 400 18px/30px "Microsoft Yahei";
+}
+
+/*1217首饰分会场右边的楼梯*/
+.bodyfix {
+    width: 132px;
+    height: 256px;
+    position: fixed;
+    right: 10px;
+    /*top: 250px;*/
+    top: 50%;
+    margin-top: -128px;
+    background: url(../images/bodyfix.png) no-repeat -150px 0;
+    display: none;
+}
+.bodyfix ul {
+    padding: 102px 9px 0 7px;
+}
+.bodyfix li.h33 {
+    height: 33px;
+}
+.bodyfix li {
+    display: inline-block;
+    width: 116px;
+    height: 35px;
+    margin-bottom: 3px;
+}
+.bodyfix li a {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+}
+.bodyfix ul li a:hover,.bodyfix ul li.on a {
+    background-image:url(../images/bodyfix.png); background-repeat:no-repeat;
+}
+.bodyfix ul li a.nav1:hover,.bodyfix ul li.on a.nav1{ background-position:-10px -102px;}
+.bodyfix ul li a.nav2:hover,.bodyfix ul li.on a.nav2{ background-position:-10px -138px;}
+.bodyfix ul li a.nav3:hover,.bodyfix ul li.on a.nav3{ background-position:-10px -176px;}
+.bodyfix ul li a.nav4:hover,.bodyfix ul li.on a.nav4{ background-position:-10px -214px;}

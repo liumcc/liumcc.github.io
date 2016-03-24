@@ -1,0 +1,441 @@
+html, body, ul, li, ol, dl, dd, dt, p, h1, h2, h3, h4, h5, h6, form, fieldset, legend, img {
+    margin: 0;
+    padding: 0;
+}
+
+fieldset, img, input, button { 			/*fieldset组合表单中的相关元素*/
+    border: none;
+    padding: 0;
+    margin: 0;
+    outline-style: none;
+}
+
+ul, ol {
+    list-style: none;				/*清除列表风格*/
+}
+
+input {
+    padding-top: 0;
+    padding-bottom: 0;
+    font-family: "SimSun", "宋体";
+}
+
+select, input {
+    vertical-align: middle;
+}
+
+select, input, textarea {
+    font-size: 12px;
+    margin: 0;
+}
+
+textarea {
+    resize: none;
+}
+
+/*防止多行文本框拖动*/
+img {
+    border: 0;
+    vertical-align: middle;
+}
+
+/*  去掉图片低测默认的3像素空白缝隙*/
+table {
+    border-collapse: collapse;			/*合并外边线*/
+}
+
+
+body {
+    font: 12px/150% Arial, Verdana, "\5b8b\4f53";	/*宋体，Unicode，统一码*/
+    color: #666;
+    background: #fff
+}
+
+.clearfix:before, .clearfix:after {
+    content: "";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.clearfix {
+    *zoom: 1; /*IE/7/6*/
+}
+
+a {
+    color: #888886;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #584A97;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    text-decoration: none;
+    font-weight: normal;
+    font-size: 100%;
+}
+
+s, i, em {
+    font-style: normal;
+    text-decoration: none;
+}
+.w1 {
+    width: 1200px;
+    margin: 0 auto;
+}
+.fl {
+    float: left;
+}
+.fr {
+    float: right;
+}
+
+/*Header*/
+.Header {
+    height: 161px;
+}
+.Header-topBar {
+    height: 30px;
+}
+.Header-topBar-drop {
+    position: relative;
+    padding: 0 5px;
+}
+.Header-topBar-dropdown {
+    position: absolute;
+    top: 30px;
+    left: -35px;
+    line-height: 22px;
+    background-color: #f5f5f5;
+    border: 1px solid #eee;
+    display: none;
+    width: 93px;
+    padding: 6px;
+}
+.Header-topBar ul{
+    color: #888886;
+    font-size: 12px;
+    font-family: tahoma,arial,\5b8b\4f53,sans-serif;
+    height: 30px;
+    line-height: 30px;
+}
+.Header-topBar ul li {
+    float: left;
+    margin-right: 16px;
+}
+.Header-logo {
+    width: 212px;
+    margin-top: -12px;
+}
+.Header-logo .img {
+    margin-right: 10px;
+}
+.Header-search {
+    width: 977px;
+    height: 65px;
+    margin-top: 25px;
+}
+.Header-search-input input {
+    width: 400px;
+    height: 22px;
+    border: 2px solid #584A97;
+    padding: 4px;
+    padding-left: 10px;
+    float: left;
+    color: #9F9F9F;
+}
+.Header-search button {
+    width: 70px;
+    height: 34px;
+    background-color: #584A97;
+    color: #fff;
+    float: left;
+    font: 600 14px/34px "SimSun";
+    cursor: pointer;
+}
+.Header-search-more {
+    width: 700px;
+    height: 15px;
+    margin-top: 10px;
+}
+.Header-search-more ul li {
+    float: left;
+    margin-right: 25px;
+}
+.Header-search-more ul a {
+    display: inline-block;
+}
+.Header-search-more ul a:hover{
+    color: #e93b39;
+    text-decoration: underline;
+}
+.Header-search-app {
+    width: 96px;
+    height: 128px;
+    position: absolute;
+    top: 30px;
+    right: 94px;
+}
+.Header-search-navbar {
+    width: 850px;
+    height: 45px;
+}
+.Header-navbar {
+    width: 1100px;
+    position: absolute;
+    top: 128px;
+    /*left: 306px;*/
+}
+.Header-navbar-bar {
+    width: 850px;
+    position: relative;
+}
+.Header-navbar-bar img {
+    position: absolute;
+    top: 0;
+    left: 118px;
+}
+.Header-navbar-bar ul li {
+    float: left;
+}
+.Header-dropdown {
+    width: 180px;
+    height: 36px;
+    position: relative;
+    z-index: 10;
+}
+.Header-navbar-bar {
+    height: 45px;
+    width: 877px;
+    font: 400 14px/45px "microsoft yahei";
+}
+.Header-navbar-bar a {
+    color: #333;
+}
+.Header-navbar-bar a:hover {
+    color: #584A97;
+}
+.Header-navbar-bar img {
+    position: absolute;
+    width: 430px;
+    height: 123px;
+    width: 19px;
+    height: 12px;
+}
+.Header-navbar-bar ul a {
+    display: inline-block;
+    margin-right: 35px;
+}
+.Header-navbar-bar .last {
+    margin-right: 5px;
+}
+/*End Header*/
+
+/*erji*/
+.Header-dropdown {
+    width: 180px;
+    height: 593px;
+}
+.dropdown-tit {
+    height: 33px;
+    background-color: #392F6B;
+    text-align: center;
+    color: #fff;
+    font: normal 14px/32px "microsoft yahei";
+}
+.dropdown-con ul li.con-list {
+    width: 162px;
+    height: 40px;
+    padding: 10px 0 10px 18px;
+    display: none;
+    position: relative;
+}
+.dropdown-con ul li.con-list .con-left .con-left-a {
+    font: normal 14px/14px "microsoft yahei";
+    color: #fff;
+}
+.dropdown-con .con-left-pro a {
+    display: inline-block;
+    padding-right: 8px;
+    padding-top: 5px;
+    font: normal 12px "Microsoft Yahri";
+    color: #ccc;
+}
+
+
+
+.dropdown-con li.current {
+    background: #fff !important;
+}
+.dropdown-con li.current .con-left-a{
+    color: #382f6b !important;
+}
+.dropdown-con li.current .con-left-pro a{
+    color: #000;
+}
+.dropdown-con li.current .con-left-pro a.hover {
+    color: red ;
+    text-decoration: underline;
+}
+
+
+
+
+
+.dropdown-con .con-right {
+    width: 344px;
+    height: 447px;
+    border: 1px solid #423972;
+    border-left: 0;
+    position: absolute;
+    background: #fff;
+    top: -1px;
+    left:179px;
+    display: none;
+}
+.dropdown-con .con-right {
+    padding: 0px 25px 10px 25px;
+
+}
+.dropdown-con .con-right strong {
+    display: block;
+    color: #4F4872;
+    font: 600 12px "Microsoft Yahei";
+    padding-top: 15px;
+}
+.dropdown-con .con-right .con-right-con {
+    margin: 10px 0 0 -6px;
+    padding-bottom: 18px;
+    border-bottom: 1px dotted #ccc;
+}
+.dropdown-con .con-right .con-right-con  a{
+    display: inline-block;
+    padding: 2px 8px;
+    color: #000;
+}
+.dropdown-con .con-right .last {
+    border: 0px;
+}
+.right-con-zhuanchang  {
+    width: 260px;
+    height: 27px;
+    margin-top: 20px;
+}
+.right-con-zhuanchang .right,.left {
+    width: 120px;
+    height: 27px;
+    background: #463C7B;
+    text-align: center;
+}
+.right-con-zhuanchang .right a {
+    color: #fff;
+    font: 600 12px/27px "Microsoft Yahei";
+}
+.right-con-zhuanchang .left a {
+    color: #fff;
+    font: 600 12px/27px "Microsoft Yahei";
+}
+.right-con-zhuanchang .right {
+    float: right;
+}
+.right-con-zhuanchang .left {
+    float: left;
+}
+.right-con-zhuanchang .left a:hover {
+    opacity: .6;
+}
+.right-con-zhuanchang .right a:hover {
+    opacity: .6;
+}
+
+/*erji*/
+
+/*Footer*/
+.Footer-top {
+    padding: 21px 0 25px;
+    position: relative;
+}
+.ftmap {
+    position: absolute;
+    top: 5px;
+    left: 5px;
+}
+.wxqhb {
+    position: absolute;
+    top: 50px;
+    right: 80px;
+    cursor: pointer;
+}
+.wxhb {
+    position: absolute;
+    top: -10px;
+    right: -63px;
+    display: none;
+}
+.Footer-top dl dt {
+    padding: 6px 0 11px;
+    font-weight: bold;
+    color: #000000;
+}
+.Footer-top dl {
+    width: 172px;
+    float: left;
+    position: relative;
+    z-index: 10;
+}
+.Footer-top dl dd {
+    line-height: 21px;
+}
+.Footer-top .last {
+    width: 336px;
+    position: relative;
+}
+.Footer-top .last span {
+    color: #000;
+}
+.Footer-top .last .dd {
+    margin-top: 8px;
+}
+.Footer-top .last ul {
+    position: absolute;
+    left: 90px;
+    top: 80px;
+}
+.Footer-slogin {
+    background: url("../images/footer_slign.png");
+    height: 40px;
+}
+.Footer-bottom {
+    padding: 30px 0 20px;
+    position: relative;
+}
+.Footer-bottom div span {
+    margin-right: 20px;
+    line-height: 30px;
+}
+.Footer-bottom .imgs {
+    margin-top: 20px;
+}
+.Footer-bottom-wx {
+    position: absolute;
+    top: 20px;
+    right: 12px;
+}
+.Footer-bottom-wx div {
+    width: 110px;
+    text-align: center;
+}
+.Footer-bottom-sj {
+    position: absolute;
+    top: 20px;
+    right: 135px;
+}
+.Footer-bottom-sj div {
+    width: 110px;
+    text-align: center;
+}
+/*End Footer*/
