@@ -1,6 +1,4 @@
-/**
- * Created by zhousg on 2016/1/6.
- */
+
 /*在页面加载完成运行
  * touch
  * */
@@ -84,7 +82,7 @@ var scrollPic = function(){
     },3000);
 
     /*是自定义事件绑定方法*/
-    itcast.transitionEnd(imgBox,function(e){
+    lm.transitionEnd(imgBox,function(e){
         if(index >= 9){
             index = 1;
             removeTransition();

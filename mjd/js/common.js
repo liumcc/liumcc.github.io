@@ -1,9 +1,7 @@
-/**
- * Created by zhousg on 2016/1/8.
- */
+
 /*公用的js文件*/
-window.itcast = {};
-itcast.transitionEnd = function(obj, callback) {
+window.lm = {};
+lm.transitionEnd = function(obj, callback) {
     /*当是对象的时候绑定事件*/
     if (typeof obj == 'object') {
       obj.addEventListener('transitionEnd', function(e) {
@@ -18,7 +16,7 @@ itcast.transitionEnd = function(obj, callback) {
     }
   }
   /*模拟的tap事件*/
-itcast.tap = function(obj, callback) {
+lm.tap = function(obj, callback) {
   if (typeof obj != 'object') return false;
 
   var startTime = 0,

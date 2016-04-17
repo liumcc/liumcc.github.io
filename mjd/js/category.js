@@ -1,6 +1,4 @@
-/**
- * Created by zhousg on 2016/1/8.
- */
+
 window.onload = function() {
   leftCategory();
 };
@@ -96,7 +94,7 @@ var leftCategory = function() {
   var liList = childDom.getElementsByTagName('li');
 
   /*点击事件*/
-  itcast.tap(childDom, function(e) {
+  lm.tap(childDom, function(e) {
     for (var i = 0; i < liList.length; i++) {
       liList[i].className = " ";
       /*给每个li索引*/

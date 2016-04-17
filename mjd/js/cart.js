@@ -1,6 +1,4 @@
-/**
- * Created by zhousg on 2016/1/9.
- */
+
 window.onload = function(){
     deleteOption();
 }
@@ -21,7 +19,7 @@ var deleteOption = function(){
     /*给他们加上事件*/
     for(var i = 0 ; i < deleteList.length ; i++ ){
         deleteList[i].index = i;
-        /*itcast.tap(deleteList[i],function(e){
+        /*lm.tap(deleteList[i],function(e){
             console.log(this.index);
         });*/
         deleteList[i].onclick = function(){
